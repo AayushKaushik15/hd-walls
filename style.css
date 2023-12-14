@@ -1,0 +1,373 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto sans";
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4%;
+    /* background-color: #fff; */
+    z-index: 9999;    
+    box-shadow: 0px 0px 10px rgb(216, 216, 216);
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(20px);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0px 15px;
+    padding: 5px;
+    color: gray;
+}
+
+.icon {
+    display: flex ;
+    align-items: center;
+}
+
+.icon span {
+    font-size: 2.3rem;
+    margin-right: 10px;
+}
+
+ul button {
+    padding: 0px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #24252A;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* 
+
+
+
+*/
+
+
+.body-container {
+    position: relative;
+    top: 90px;
+}
+
+.grid-container {
+    display: flex;
+    padding: 0px 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-box-buttons button {
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: "Poppins";
+}
+
+.left-box h1 {
+    font-size: 2.9rem;
+    margin: 10px 0;
+    max-width: 600px;
+}
+
+.left-box .left-para {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.btn1 {
+    background-color: #24252A;
+    color: #fff;
+    border: none;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.btn1:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid black;
+}
+
+.btn2 {
+    border: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn2:hover {
+    border: 1px solid gray;
+}
+
+.last-para {
+    background-color: rgb(229, 229, 229);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 600px;
+    font-size: 0.9rem;
+}
+
+
+/* 
+
+social-tags
+*/
+
+
+.social-tags {
+    margin-top: 90px;
+    padding: 0 6%;
+}
+
+
+.social-tags  {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-tags div {
+    display: flex;
+    align-items: center;
+}
+
+div span {
+    color: grey;
+}
+
+.tags {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+    .gallery img {
+        height: 500px;
+        margin-block: 90px;
+        background-size: 2420px;
+        width: 7260px;
+        animation: scrollBackground 25s linear infinite;
+    }
+    
+    .gallery {
+        display: flex;
+        overflow: hidden;
+    }
+
+    @keyframes scrollBackground {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-40%);
+        }
+    }
+
+
+
+
+.last-flow {
+    padding: 20px 0;
+    background-color: #fefefe;
+}
+
+.topic-text {
+    background: url("https://unsplash.com/assets/api/api-vip-logos@2x-00da19ae8453a8282bb91c2397aae31a926115e2ad4707590404ba4637de8ceb.png");
+    padding: 90px;
+    background-size: contain;
+
+    text-align: center;
+}
+
+.last-flow h1 {
+    font-size: 3rem;
+}
+
+.topic-text p {
+    font-size: 1.3rem;
+}
+
+
+.tool-box {
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-between;
+
+}
+
+.box-1 {
+    display: flex;
+    width: 650px;
+    border-radius: 10px;
+    
+    padding: 30px;
+    transition: 0.3s ease;
+}
+
+.box-1:hover {
+    box-shadow: 5 5 10px rgb(197, 197, 197);
+}
+
+
+
+.box-1 h2 {
+    margin: 13px 0;
+}
+
+
+
+
+/* 
+
+
+search API
+
+*/
+
+.search-box-container {
+    margin-block: 40px;
+}
+
+.searchBar {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    border: 4px solid rgb(201, 201, 201);
+    align-items: center;
+    border-radius: 50px;
+}
+
+.searchBar input {
+    width: 100%;
+    padding: 10px 10px;
+    font-family: "Poppins";
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+
+input::placeholder {
+    color: #d1d1d1;
+}
+
+.searchBar span {
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
+}
+
+
+.card-container img{
+    /* display: flex; */
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    margin: 10px;
+    background-color: rgb(203, 203, 203);
+}
+
+
+.card-flow {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300, 1fr));
+}
+
+
+.toogle {
+    display: flex;
+    margin: 0px 10px;
+}
+
+.toogle span {
+    margin-right: 10px;
+    color: red;
+}
+
+.trends {
+    padding: 0 5%;
+    margin: 30px 0;
+}
+
+.trends span {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.trends span:first-child  {
+    background-color: grey;
+    color: #fff;
+}
+
+.trends span:hover {
+    background-color: grey;
+    color: #fff;
+}
+
+
+.about-container {
+    position: relative;
+    top: 90px;
+    
+}
+
+
+/* 
+
+
+
+
+*/
+
+
+
+.main-walls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.about-images img{
+    width: 100%;
+}
+
+.decor-img h1, ul{
+    text-align: center;
+}
+
+.decor-img ul li {
+    margin: 10px;
+    font-size: 2rem;
+}
